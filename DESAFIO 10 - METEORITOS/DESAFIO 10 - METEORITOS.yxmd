@@ -1,0 +1,1750 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="773" height="612" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[
+
+
+
+
+
+As chuvas de meteoritos são um fenómeno natural cativante, embora seja difícil vê-las, dependendo da sua localização. Mas, os residentes e visitantes da área de Las Vegas ficam em uma posição vantajosa para observar esse fenômeno, pois estão próximos de céus desérticos expansivos que oferecem excelentes condições para a observação de meteoritos.
+
+Para este desafio, a sua missão é planejar uma excursão de impacto de meteoritos perto de Las Vegas, garantindo que os entusiastas visitem locais onde haja a melhor oportunidade de testemunhar este espetáculo celestial.
+
+Para chegar ao resultado, siga as instruções abaixo. Calcule todas as distâncias em quilômetros.
+
+1.	Encontrar um local de impacto de meteoritos que esteja mais próximo de um hotel que custe menos de 200 dólares por noite. Nomear este local como a "Primeira Parada".
+
+2.	Identifique o local de impacto de meteoritos mais próximo em relação à Primeira Parada. Designe este local como a "Segunda Parada" e determine a distância entre a primeira e a segunda paradas.
+
+3.	Localize o local de impacto de meteoritos mais próximo em relação à Segunda Parada. Designe este local como "Terceira Parada" e determine a distância entre a segunda e a terceira paradas.
+
+4.	Calcule a distância total percorrida desde o hotel até à terceira parada.
+
+Resumo dos dados:
+Você tem dois conjuntos de dados. O conjunto de dados de texto contém a latitude e longitude de alguns hotéis em Las Vegas com o seu custo por noite. O segundo conjunto de dados, (meteorite-landings.csv), contém a latitude e longitude de mais de 45.000 meteoritos que atingiram o nosso planeta. 
+
+Fonte dos dados: https://www.kaggle.com/datasets/nasa/meteorite-landings
+]]></Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="702" y="78" width="120" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Arial" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="90" y="102" width="612" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>DESAFIO 10 - METEORITOS</Text>
+          <Font name="Arial" size="15.75" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="690" width="168" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Entrada</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="246" y="690" width="180" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Saída</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\apter\AppData\Local\Temp\Engine_18972_5ac2d9936cd06147a9466cfd32533371_\Engine_18972_e42dcb58d9eb884ebf7d005e361b5f86~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="36" />
+          <Fields>
+            <Field name="Hotel" />
+            <Field name="Lat" />
+            <Field name="Lon" />
+            <Field name="cost per night" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Mardi Gras Hotel &amp; Casino</c>
+              <c>36.12561434000018</c>
+              <c>-115.15454594468652</c>
+              <c>847.02</c>
+            </r>
+            <r>
+              <c>Ellis Island Hotel</c>
+              <c>36.11231845214043</c>
+              <c>-115.16339534407423</c>
+              <c>153.71</c>
+            </r>
+            <r>
+              <c>Downtown Grand Hotel &amp; Casino</c>
+              <c>36.17174281057653</c>
+              <c>-115.14155915756683</c>
+              <c>148.36</c>
+            </r>
+            <r>
+              <c>Alexis Park Resort</c>
+              <c>36.10758574805146</c>
+              <c>-115.15625160174501</c>
+              <c>176.49</c>
+            </r>
+            <r>
+              <c>Plaza Hotel &amp; Casino</c>
+              <c>36.17183594525061</c>
+              <c>-115.14686100174384</c>
+              <c>96.8</c>
+            </r>
+            <r>
+              <c>The Platinum Hotel &amp; Spa</c>
+              <c>36.11384274915675</c>
+              <c>-115.16292037290961</c>
+              <c>252.41</c>
+            </r>
+            <r>
+              <c>Hampton Inn Tropicana</c>
+              <c>36.099772875823625</c>
+              <c>-115.1833118780961</c>
+              <c>191.85</c>
+            </r>
+            <r>
+              <c>Best Western Plus Casino Royale</c>
+              <c>36.12034487871106</c>
+              <c>-115.17211184407414</c>
+              <c>112.98</c>
+            </r>
+            <r>
+              <c>Best Western Mccarran Inn</c>
+              <c>36.100003656098615</c>
+              <c>-115.14863738640378</c>
+              <c>170.57</c>
+            </r>
+            <r>
+              <c>Horseshoe Las Vegas Hotel &amp; Casino</c>
+              <c>36.114124613695644</c>
+              <c>-115.17062069089907</c>
+              <c>116.14</c>
+            </r>
+            <r>
+              <c>The Venetian Las Vegas</c>
+              <c>36.121273438791675</c>
+              <c>-115.1696552437636</c>
+              <c>353.44</c>
+            </r>
+            <r>
+              <c>Treasure Island Hotel Las Vegas</c>
+              <c>36.12480482840794</c>
+              <c>-115.17210655923128</c>
+              <c>117.78</c>
+            </r>
+            <r>
+              <c>The LINQ Hotel + Experience</c>
+              <c>36.11825901288914</c>
+              <c>-115.17242310807706</c>
+              <c>130.95</c>
+            </r>
+            <r>
+              <c>Flamingo Las Vegas Hotel &amp; Casino</c>
+              <c>36.11653905890703</c>
+              <c>-115.17078113330625</c>
+              <c>102.45</c>
+            </r>
+            <r>
+              <c>Hilton Grand Vacations Club Flamingo Las Vegas</c>
+              <c>36.11650734315833</c>
+              <c>-115.17077823609117</c>
+              <c>316.33</c>
+            </r>
+            <r>
+              <c>The Mirage</c>
+              <c>36.12123059270292</c>
+              <c>-115.17406954871598</c>
+              <c>197.04</c>
+            </r>
+            <r>
+              <c>Circus Circus Hotel and Casino</c>
+              <c>36.14036049342636</c>
+              <c>-115.16457077110567</c>
+              <c>98.26</c>
+            </r>
+            <r>
+              <c>The Cromwell Las Vegas Hotel &amp; Casino</c>
+              <c>36.1151276377025</c>
+              <c>-115.17184939373074</c>
+              <c>351.91</c>
+            </r>
+            <r>
+              <c>Bellagio Hotel &amp; Casino</c>
+              <c>36.113043198684714</c>
+              <c>-115.1765407501104</c>
+              <c>325.08</c>
+            </r>
+            <r>
+              <c>The Cosmopolitan of Las Vegas</c>
+              <c>36.109873048673734</c>
+              <c>-115.17386208843857</c>
+              <c>493.01</c>
+            </r>
+            <r>
+              <c>Planet Hollywood Las Vegas Resort &amp; Casino</c>
+              <c>36.110077130302074</c>
+              <c>-115.17012704700288</c>
+              <c>155.06</c>
+            </r>
+            <r>
+              <c>Vdara Hotel &amp; Spa</c>
+              <c>36.10989925429614</c>
+              <c>-115.1782259404031</c>
+              <c>357.42</c>
+            </r>
+            <r>
+              <c>ARIA Resort &amp; Casino</c>
+              <c>36.107515236710306</c>
+              <c>-115.17675765589756</c>
+              <c>318.37</c>
+            </r>
+            <r>
+              <c>Park MGM Las Vegas</c>
+              <c>36.104576742764195</c>
+              <c>-115.17661818103751</c>
+              <c>211.61</c>
+            </r>
+            <r>
+              <c>New York-New York Hotel &amp; Casino</c>
+              <c>36.102295845836366</c>
+              <c>-115.17441525313232</c>
+              <c>169.32</c>
+            </r>
+            <r>
+              <c>Jet Luxury @ The Signature Condo Hotel</c>
+              <c>36.10606460258848</c>
+              <c>-115.16680357123377</c>
+              <c>241.01</c>
+            </r>
+            <r>
+              <c>Tropicana Las Vegas - a DoubleTree by Hilton Hotel</c>
+              <c>36.09969556618294</c>
+              <c>-115.17134004355049</c>
+              <c>99.58</c>
+            </r>
+            <r>
+              <c>Excalibur Hotel &amp; Casino</c>
+              <c>36.09897842332206</c>
+              <c>-115.17543454344104</c>
+              <c>77.36</c>
+            </r>
+            <r>
+              <c>OYO Hotel &amp; Casino</c>
+              <c>36.10052777873313</c>
+              <c>-115.16776589405902</c>
+              <c>100.86</c>
+            </r>
+            <r>
+              <c>Rio All-Suite Hotel &amp; Casino</c>
+              <c>36.11843944167908</c>
+              <c>-115.18837694442813</c>
+              <c>87.39</c>
+            </r>
+            <r>
+              <c>Extended Stay America - Las Vegas - Valley View</c>
+              <c>36.112914926967385</c>
+              <c>-115.18939764901836</c>
+              <c>112.92</c>
+            </r>
+            <r>
+              <c>Club Wyndham Desert Blue</c>
+              <c>36.122768080886416</c>
+              <c>-115.18419205642739</c>
+              <c>153.98</c>
+            </r>
+            <r>
+              <c>Palms Casino Resort</c>
+              <c>36.11469751790729</c>
+              <c>-115.1949255426762</c>
+              <c>189.58</c>
+            </r>
+            <r>
+              <c>Palms Place Studio with Balcony &amp; Strip View</c>
+              <c>36.114689347540036</c>
+              <c>-115.19855812363188</c>
+              <c>208.21</c>
+            </r>
+            <r>
+              <c>The STRAT Hotel, Casino &amp; SkyPod</c>
+              <c>36.14823842892202</c>
+              <c>-115.15690478403396</c>
+              <c>109.8</c>
+            </r>
+            <r>
+              <c>Extended Stay America - Las Vegas - Midtown</c>
+              <c>36.13559797566877</c>
+              <c>-115.13784919347653</c>
+              <c>166.15</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Las Vegas Hotels</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\apter\AppData\Local\Temp\Engine_18972_5ac2d9936cd06147a9466cfd32533371_\Engine_18972_7d92aded33dc7049add9a9f8bf7cda24~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">Assets\Input\meteorite-landings.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>932</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>meteorite-landings.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="name" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="id" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="nametype" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="recclass" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="mass" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="fall" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="year" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="reclat" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="reclong" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+            <Field name="GeoLocation" size="254" source="File: C:\Projetos\Desafios\10 - Meteoritos\DESAFIO 10 - METEORITOS\Assets\Input\meteorite-landings.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\apter\AppData\Local\Temp\Engine_18972_5ac2d9936cd06147a9466cfd32533371_\Engine_18972_93bf6669202211478da089d6b53fde93~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="258" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Hotel" />
+            <Field name="First Stop" />
+            <Field name="Distance from the hotel" />
+            <Field name="Second Stop" />
+            <Field name="Distance between first and second stop" />
+            <Field name="Third Stop" />
+            <Field name="Distance between second and third stop" />
+            <Field name="Total Distance" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Hampton Inn Tropicana</c>
+              <c>Roach Dry Lake 006</c>
+              <c>48.56</c>
+              <c>Roach Dry Lake 027</c>
+              <c>0.65</c>
+              <c>Roach Dry Lake 075</c>
+              <c>1.21</c>
+              <c>50.42</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings>
+        <Position x="3714" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="CReW_ExpectEqual.yxmc" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="833" y="917" width="386" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 67</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8040" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="858" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="DistanceKilometers" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Ordenando as distancias</AnnotationText>
+              <DefaultAnnotationText>DistanceKilometers - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="950" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>DistanceKilometers</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-09-26 17:00:09</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2023-09-26 17:00:09</StartDate>
+                  <EndDate>2023-09-26 17:00:09</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Eliminando distancias nulas</AnnotationText>
+              <DefaultAnnotationText>!IsNull([DistanceKilometers])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1134" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Hotel" selected="True" />
+                <SelectField field="name" selected="True" rename="First Stop" />
+                <SelectField field="Source_Centroid" selected="True" rename="Centroid first stop" />
+                <SelectField field="DistanceKilometers" selected="True" rename="Distance from the hotel" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>First Stop</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="1042" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>menor distancia hotel meteorito</AnnotationText>
+              <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="388" y="917" width="403" height="312" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 68</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8040" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="413" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&lt;</Operator>
+                <Field>cost per night</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-09-26 16:49:56</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>200</Operand>
+                  <StartDate>2023-09-26 16:49:56</StartDate>
+                  <EndDate>2023-09-26 16:49:56</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Hoteis com per noite menos que 200</AnnotationText>
+              <DefaultAnnotationText>[cost per night] &lt; 200</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+            <Position x="502" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields fieldX="Lon" fieldY="Lat" />
+              <Mode>Double</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Criando ponto geografico para hoteis</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+            <Position x="413" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields fieldX="reclong" fieldY="reclat" />
+              <Mode>Double</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Criando ponto geograficos para meteoritos caidos</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="590" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_Centroid" selected="True" rename="Source_Centroid" input="Source_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
+            <Position x="678" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OutputDistance value="True" />
+              <ReturnNearest value="False" />
+              <DistToInsideEdge value="False" />
+              <OutputDriveTimeAndDistance value="False" />
+              <SpatialObjSource>Centroid</SpatialObjSource>
+              <SpatialObjDest>Source_Centroid</SpatialObjDest>
+              <DriveTimeDataSet>Latest</DriveTimeDataSet>
+              <AllowReverseRoute value="True" />
+              <MaxDriveTime value="30" />
+              <DriveDistanceOnly value="False" />
+              <OutputCardinalDirection value="True" />
+              <OutputDirectionDegrees value="False" />
+              <IsMetric value="True" />
+              <OutputUnits>Kilometers</OutputUnits>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Calculando distancia entre pontos meteoritos e hoteis</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxDistance" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="2086" y="929" width="879" height="194" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 70</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8040" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="2111" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Second Stop" selected="True" input="Target_" />
+                    <SelectField field="Target_Centroid second stop" selected="True" input="Target_" />
+                    <SelectField field="Source_name" selected="True" input="Source_" />
+                    <SelectField field="Source_Centroid" selected="True" rename="Centroid third stop" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
+            <Position x="2187" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OutputDistance value="True" />
+              <ReturnNearest value="False" />
+              <DistToInsideEdge value="False" />
+              <OutputDriveTimeAndDistance value="False" />
+              <SpatialObjSource>Centroid second stop</SpatialObjSource>
+              <SpatialObjDest>Centroid third stop</SpatialObjDest>
+              <DriveTimeDataSet>Latest</DriveTimeDataSet>
+              <AllowReverseRoute value="True" />
+              <MaxDriveTime value="30" />
+              <DriveDistanceOnly value="False" />
+              <OutputCardinalDirection value="True" />
+              <OutputDirectionDegrees value="False" />
+              <IsMetric value="True" />
+              <OutputUnits>Kilometers</OutputUnits>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Calculando distancia entre second e third stop</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxDistance" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2264" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>DistanceKilometers</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-09-26 17:43:19</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2023-09-26 17:43:19</StartDate>
+                  <EndDate>2023-09-26 17:43:19</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>eliminando distancias nulas</AnnotationText>
+              <DefaultAnnotationText>!IsNull([DistanceKilometers])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="2340" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="DistanceKilometers" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>ordenando distancias</AnnotationText>
+              <DefaultAnnotationText>DistanceKilometers - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="2416" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>name</FieldFind>
+              <FieldSearch>First Stop</FieldSearch>
+              <ReplaceFoundField>First Stop</ReplaceFoundField>
+              <FindMode>FindWhole</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="First Stop" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Verificando se a third stop nao é a primeira</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="2492" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>name</FieldFind>
+              <FieldSearch>Second Stop</FieldSearch>
+              <ReplaceFoundField>Second Stop</ReplaceFoundField>
+              <FindMode>FindWhole</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="Second Stop" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Verificando se a third stop nao é a segumda</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2569" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>IsNull([First Stop])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Eliminando terceira parada igual primeira parada</AnnotationText>
+              <DefaultAnnotationText>IsNull([First Stop])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="2645" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNull</Operator>
+                <Field>Second Stop2</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-09-26 17:56:30</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2023-09-26 17:56:30</StartDate>
+                  <EndDate>2023-09-26 17:56:30</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Eliminando terceira parada igual segunda parada</AnnotationText>
+              <DefaultAnnotationText>IsNull([Second Stop2])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="2721" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="DistanceKilometers" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Ordenando distancias</AnnotationText>
+              <DefaultAnnotationText>DistanceKilometers - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="2798" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>pegando menor distancia</AnnotationText>
+              <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2874" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="name" selected="True" />
+                <SelectField field="DistanceKilometers" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Third Stop</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="3005" y="929" width="475" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 71</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8040" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="3030" y="978" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Hotel" selected="True" input="Target_" />
+                    <SelectField field="Target_First Stop" selected="True" input="Target_" />
+                    <SelectField field="Target_Distance from the hotel" selected="True" input="Target_" />
+                    <SelectField field="Source_Second Stop" selected="True" input="Source_" />
+                    <SelectField field="Source_Distance between first and second stop" selected="True" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Juntando primeira e segunda parada</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="3150" y="990" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Hotel" selected="True" input="Target_" />
+                    <SelectField field="Target_First Stop" selected="True" input="Target_" />
+                    <SelectField field="Target_Distance from the hotel" selected="True" input="Target_" />
+                    <SelectField field="Target_Second Stop" selected="True" input="Target_" />
+                    <SelectField field="Target_Distance between first and second stop" selected="True" input="Target_" />
+                    <SelectField field="Source_name" selected="True" rename="Third Stop" input="Source_" />
+                    <SelectField field="Source_DistanceKilometers" selected="True" rename="Distance between second and third stop" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Juntando terceira parada</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="3366" y="990" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Distance from the hotel] + [Distance between first and second stop] + [Distance between second and third stop]" field="Total Distance" size="8" type="Double" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Distancia Total</AnnotationText>
+              <DefaultAnnotationText>Total Distance = [Distance from the hotel] + [Distance between first and second ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="3270" y="990" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Numeric</FieldType>
+              <Fields orderChanged="False">
+                <Field name="Distance from the hotel" />
+                <Field name="Distance between first and second stop" />
+                <Field name="Distance between second and third stop" />
+                <Field name="*Unknown" selected="False" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>Round([_CurrentField_], 0.01)</Expression>
+              <ChangeFieldType value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Arredondando distancias</AnnotationText>
+              <DefaultAnnotationText>Round([_CurrentField_], 0.01)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ControlContainer.ControlContainer">
+        <Position x="1277" y="917" width="774" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Control Container 69</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8040" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="1302" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Allow</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Hotel" selected="True" input="Target_" />
+                    <SelectField field="Target_Centroid first stop" selected="True" input="Target_" />
+                    <SelectField field="Source_name" selected="True" input="Source_" />
+                    <SelectField field="Source_Centroid" selected="True" rename="Centroid second stop" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
+            <Position x="1395" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OutputDistance value="True" />
+              <ReturnNearest value="False" />
+              <DistToInsideEdge value="False" />
+              <OutputDriveTimeAndDistance value="False" />
+              <SpatialObjSource>Centroid first stop</SpatialObjSource>
+              <SpatialObjDest>Centroid second stop</SpatialObjDest>
+              <DriveTimeDataSet>Latest</DriveTimeDataSet>
+              <AllowReverseRoute value="True" />
+              <MaxDriveTime value="30" />
+              <DriveDistanceOnly value="False" />
+              <OutputCardinalDirection value="True" />
+              <OutputDirectionDegrees value="False" />
+              <IsMetric value="True" />
+              <OutputUnits>Kilometers</OutputUnits>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[Calculando distancia entre first stop e second ]]></AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxDistance" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1580" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1033">
+                <Field field="DistanceKilometers" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Ordenando distancias</AnnotationText>
+              <DefaultAnnotationText>DistanceKilometers - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1487" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([DistanceKilometers])</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Eliminando distanciaas nulas</AnnotationText>
+              <DefaultAnnotationText>!IsNull([DistanceKilometers])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="1857" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>menor distancia entre first stop e second</AnnotationText>
+              <DefaultAnnotationText>First 1 rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1950" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="name" selected="True" rename="Second Stop" />
+                <SelectField field="Centroid second stop" selected="True" />
+                <SelectField field="DistanceKilometers" selected="True" rename="Distance between first and second stop" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Second Stop</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="1672" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>name</FieldFind>
+              <FieldSearch>First Stop</FieldSearch>
+              <ReplaceFoundField>First Stop</ReplaceFoundField>
+              <FindMode>FindWhole</FindMode>
+              <NoCase value="True" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="First Stop" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Marcando first stop = second</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1765" y="966" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNull</Operator>
+                <Field>First Stop</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2023-09-26 17:53:19</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2023-09-26 17:53:19</StartDate>
+                  <EndDate>2023-09-26 17:53:19</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Eliminando calculo igual entre first e second stop</AnnotationText>
+              <DefaultAnnotationText>IsNull([First Stop])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCtrlContainer" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="3545" y="857" width="131" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Resposta</Caption>
+          <Style TextColor="#314c4a" FillColor="#00ff00" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Resposta</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="64">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="3570" y="906" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="2">
+              <Name />
+              <AnnotationText>Resposta</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="66" Connection="Expected" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="66" Connection="Actual" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Log" />
+      <Destination ToolID="69" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="31" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="31" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="46" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="46" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="48" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="48" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="60" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="60" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Log" />
+      <Destination ToolID="67" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="21" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="21" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="38" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Log" />
+      <Destination ToolID="71" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="True" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="49" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="True" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="True" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="61" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="61" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Log" />
+      <Destination ToolID="70" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="True" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="True" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DESAFIO 10 - METEORITOS</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="532414a7-441d-4525-9dee-67de52bd1fba" />
+      <Telemetry>
+        <PreviousWorkflowId value="824a4753-d85f-4521-8e85-6b096e3f8bae" />
+        <OriginWorkflowId value="824a4753-d85f-4521-8e85-6b096e3f8bae" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
